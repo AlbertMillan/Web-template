@@ -1,0 +1,155 @@
+{% load static %}
+
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Brandink</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'thesite/index.css' %}" />
+</head>
+
+<body>
+    <!-- <section class="section_1"> -->
+    <div class="bgimg">
+        <!-- <div class="title">
+            <div class="small_line"></div>
+            <span class="big_text">BRANDINK</span>
+        </div> -->
+    </div>
+    <!-- </section> -->
+
+    <!-- <p style="padding:5px 15px">This example creates a full page background image. Try to resize the browser window to see how it always will cover the
+        full screen (when scrolled to top), and that it scales nicely on all screen sizes.</p> -->
+
+    <section class="section_2" >
+        <div class="caption">
+            <span class="border">SOBRE NOSOTROS</span>
+        </div>
+        <br/>
+        <div class="line"></div>
+        <div class="sec2_box_text">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum molestiae eaque itaque nemo repellendus rem odit dolorem, est unde et. Culpa, id. Laboriosam enim eum, quos aperiam optio sed ea!</p>
+        </div>
+        <div class="sec2_options">
+            <div class="img_with_text">
+                <img class="sec2_imgs" src="{% static 'thesite/images/Brandink_wear.jpg' %}" alt="Brand Wear">
+                <p>Brand Wear</p>
+            </div>
+            <div class="img_with_text">
+                <img class="sec2_imgs" src="{% static 'thesite/images/Brandink_package.jpg' %}" alt="Brand Package">
+                <p>Brand Package</p>
+            </div>
+            <div class="img_with_text">
+                <img class="sec2_imgs" src="{% static 'thesite/images/Brandink_office.jpg' %}" alt="Brand Office">
+                <p>Brand Office</p>
+            </div>
+            <div class="img_with_text">
+                <img class="sec2_imgs" src="{% static 'thesite/images/Brandink_sticker.jpg' %}" alt="Brand Sitcks">
+                <p>Brand Sitcks</p>
+            </div>
+            <div class="img_with_text">
+                <img class="sec2_imgs" src="{% static 'thesite/images/Brandink_events.jpg' %}" alt="Brand Events">
+                <p>Brand Events</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section_3">
+        <div class="caption">
+            <span class="border">PORTFOLIO</span>
+        </div>
+        <br/>
+        <div class="line"></div>
+        <div class="sec2_box_text">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum molestiae eaque itaque nemo repellendus rem odit dolorem,
+                est unde et. Culpa, id. Laboriosam enim eum, quos aperiam optio sed ea!</p>
+        </div>
+
+        <!-- Puedo añadir un nombre a cada imagen: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_opacity -->
+        <!-- También puedo meterlo en un container en el centro de la pantalla -->
+        <div class="row">
+            <div class="column">
+                <img class="item" src="{% static 'thesite/images/BRANDINK_SUDADERA.jpg' %}" alt="Sudadera">
+                <img class="item" src="{% static 'thesite/images/BRANDINK_ETIQUETAS.jpg' %}" alt="Etiquetas">
+                <img class="item" src="{% static 'thesite/images/BRANDINK_PAPELERIA.jpg' %}" alt="Papeleria">
+                <img class="item" src="{% static 'thesite/images/BRANDINK_PAPEL_ENVOLVER.jpg' %}" alt="Papel_envolver">
+                <img class="item" src="{% static 'thesite/images/BRANDINK_MALETA_MANO.jpg' %}" alt="Maleta_de_mano">
+                <img class="item" src="{% static 'thesite/images/BRANDINK_BOTELLA.jpg' %}" alt="Botella_de_vino">
+            </div>
+            <div class="column">
+                <img class="item" src="{% static 'thesite/images/4Camisetas.jpg' %}" alt="Camisetas">
+                <img class="item" src="{% static 'thesite/images/BRANDINK_SELLO.jpg' %}" alt="Sellos">
+                <img class="item" src="{% static 'thesite/images/BRANDINK_LIBRETA.jpg' %}" alt="Libreta">
+                <img class="item" src="{% static 'thesite/images/BRANDINK_PLAYERA_MANO.jpg' %}" alt="Bolsa Playera">
+                <img class="item" src="{% static 'thesite/images/BRANDINK_COFFEE_CUP.jpg' %}" alt="Cafe cover">
+            </div>
+            <div class="column">
+                <img class="item" src="{% static 'thesite/images/BRANDINK_CAMISETA_CAJA.jpg' %}" alt="Brand Sitcks">
+                <img class="item" src="{% static 'thesite/images/BRANDINK_SOBRE_KRAFT.jpg' %}" alt="Brand Sitcks">
+                <img class="item" src="{% static 'thesite/images/BOLSA_KRAFT.jpg' %}" alt="Brand Sitcks">
+                <img class="item" src="{% static 'thesite/images/BRANDINK_FOOD_PACKAGE.jpg' %}" alt="Brand Sitcks">
+            </div>
+        </div>
+    </section>
+
+    <section class="section_4">
+        <div class="caption">
+            <span class="border">NUESTROS CLIENTES</span>
+        </div>
+        <br/>
+        <div class="line"></div>
+        <div class="sec2_box_text">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum molestiae eaque itaque nemo repellendus rem odit dolorem,
+                est unde et. Culpa, id. Laboriosam enim eum, quos aperiam optio sed ea!</p>
+        </div>
+        <div class="sec2_options">
+            <img class="sec4_inditex" src="{% static 'thesite/images/clientes/INDITEX.PNG' %}" alt="INDITEX">
+            <img class="sec4_nike" src="{% static 'thesite/images/clientes/NIKE.PNG' %}" alt="NIKE">
+            <img class="sec4_mrjeff" src="{% static 'thesite/images/clientes/MRJEFF.PNG' %}" alt="MRJEFF">
+            <img class="sec4_sporcks" src="{% static 'thesite/images/clientes/SPORKS.PNG' %}" alt="SPORCKS">
+            <img class="sec4_fnac" src="{% static 'thesite/images/clientes/FNAC.PNG' %}" alt="FNAC">
+            <img class="sec4_nbn" src="{% static 'thesite/images/clientes/NBN.PNG' %}" alt="NBN23">
+            <img class="sec4_primark" src="{% static 'thesite/images/clientes/PRIMARK.PNG' %}" alt="PRIMARK">
+        </div>
+    </section>
+
+    <section class="section_5">
+        <div class="caption">
+            <span class="border">CONTACTO</span>
+        </div>
+        <br/>
+        <div class="line"></div>
+        <div class="sec2_box_text">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum molestiae eaque itaque nemo repellendus rem odit dolorem,
+                est unde et. Culpa, id. Laboriosam enim eum, quos aperiam optio sed ea!</p>
+        </div>
+
+        <form>
+            <div class="wrapper">
+                <input type="text" name="nombre" placeholder="Nombre*" value="">
+                <input type="email" name="email" placeholder="Email*" value="">
+                <textarea name="message" placeholder="Mensaje"></textarea>
+            </div>
+            
+            <button class="submit_button" type="submit">Enviar</button>
+        </form>
+
+    </section>
+
+    <div class="footer">
+        <img class="logo" src="{% static 'thesite/images/clientes/BRANDINK.png' %}" alt="Brandink_Logo">
+        <br/>
+        <div class="footer_container">
+            <span>PREGUNTAS FRECUENTES</span>
+            <span>CONTACTO</span>
+            <span>TRABAJA CON NOSOTROS</span>
+        </div>
+        <p>© Brandink</p>
+    </div>
+
+    
+
+    <!-- <img src="{% static 'thesite/images/Profile.jpg' %}" alt="Brand Logo"> -->
+</body>
+
+</html>
