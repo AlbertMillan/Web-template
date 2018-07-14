@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Brandink</title>
     <link rel="stylesheet" type="text/css" href="{% static 'thesite/index.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'thesite/lightbox.min.css' %}" />
+    <script type="text/javascript" src="{% static 'thesite/js/lightbox-plus-jquery.min.js' %}"></script>
 </head>
 
 <body>
@@ -66,28 +68,149 @@
         </div>
 
         <!-- Puedo añadir un nombre a cada imagen: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_opacity -->
+        <!-- Crear galeria - https://www.youtube.com/watch?v=C1B1Fx3XKOg -->
         <!-- También puedo meterlo en un container en el centro de la pantalla -->
         <div class="row">
             <div class="column">
-                <img class="item" src="{% static 'thesite/images/BRANDINK_SUDADERA.jpg' %}" alt="Sudadera">
-                <img class="item" src="{% static 'thesite/images/BRANDINK_ETIQUETAS.jpg' %}" alt="Etiquetas">
-                <img class="item" src="{% static 'thesite/images/BRANDINK_PAPELERIA.jpg' %}" alt="Papeleria">
-                <img class="item" src="{% static 'thesite/images/BRANDINK_PAPEL_ENVOLVER.jpg' %}" alt="Papel_envolver">
-                <img class="item" src="{% static 'thesite/images/BRANDINK_MALETA_MANO.jpg' %}" alt="Maleta_de_mano">
-                <img class="item" src="{% static 'thesite/images/BRANDINK_BOTELLA.jpg' %}" alt="Botella_de_vino">
+                <div class="sup">
+                    <a href="{% static 'thesite/images/BRANDINK_SUDADERA.jpg' %}" data-lightbox="mygallery">
+                        <img class="item" src="{% static 'thesite/images/BRANDINK_SUDADERA.jpg' %}" alt="Sudadera">
+                        <div class="middle">
+                            <p>SUDADERA</p>
+                        </div>  
+                    </a>
+                </div>
+                <div class="sup">
+                    <a href="{% static 'thesite/images/BRANDINK_ETIQUETAS.jpg' %}" data-lightbox="mygallery">
+                        <img class="item" src="{% static 'thesite/images/BRANDINK_ETIQUETAS.jpg' %}" alt="Etiquetas">
+                        <div class="middle">
+                            <p>ETIQUETAS</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="sup">
+                    <a href="{% static 'thesite/images/BRANDINK_PAPELERIA.jpg' %}" data-lightbox="mygallery">
+                        <img class="item" src="{% static 'thesite/images/BRANDINK_PAPELERIA.jpg' %}" alt="Papeleria">
+                        <div class="middle">
+                            <p>PAPELERÍA</p>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="sup">
+                    <a href="{% static 'thesite/images/BRANDINK_PAPEL_ENVOLVER.jpg' %}" data-lightbox="mygallery">
+                        <img class="item" src="{% static 'thesite/images/BRANDINK_PAPEL_ENVOLVER.jpg' %}" alt="Papel_envolver">
+                        <div class="middle">
+                            <p>PAPEL PARA ENVOLVER</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="sup">
+                    <a href="{% static 'thesite/images/BRANDINK_MALETA_MANO.jpg' %}" data-lightbox="mygallery">
+                        <img class="item" src="{% static 'thesite/images/BRANDINK_MALETA_MANO.jpg' %}" alt="Maleta_de_mano">
+                        <div class="middle">
+                            <p>MALETA DE MANO</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="sup">
+                    <a href="{% static 'thesite/images/BRANDINK_BOTELLA.jpg' %}" data-lightbox="mygallery">
+                        <img class="item" src="{% static 'thesite/images/BRANDINK_BOTELLA.jpg' %}" alt="Botella_de_vino">
+                        <div class="middle">
+                            <p>BOTELLA DE VINO</p>
+                        </div>
+                    </a> 
+                </div>
             </div>
             <div class="column">
-                <img class="item" src="{% static 'thesite/images/4Camisetas.jpg' %}" alt="Camisetas">
-                <img class="item" src="{% static 'thesite/images/BRANDINK_SELLO.jpg' %}" alt="Sellos">
-                <img class="item" src="{% static 'thesite/images/BRANDINK_LIBRETA.jpg' %}" alt="Libreta">
-                <img class="item" src="{% static 'thesite/images/BRANDINK_PLAYERA_MANO.jpg' %}" alt="Bolsa Playera">
-                <img class="item" src="{% static 'thesite/images/BRANDINK_COFFEE_CUP.jpg' %}" alt="Cafe cover">
+                <div class="sup">
+                    <a href="{% static 'thesite/images/4Camisetas.jpg' %}" data-lightbox="mygallery">
+                        <img class="item" src="{% static 'thesite/images/4Camisetas.jpg' %}" alt="Camisetas">
+                        <div class="middle">
+                            <p>CAMISETAS</p>
+                        </div>
+                    </a>
+                   
+                </div>
+
+                <div class="sup">
+                    <a href="{% static 'thesite/images/BRANDINK_SELLO.jpg' %}" data-lightbox="mygallery">                    
+                        <img class="item" src="{% static 'thesite/images/BRANDINK_SELLO.jpg' %}" alt="Sellos">
+                        <div class="middle">
+                            <p>SELLOS</p>
+                        </div>
+                    </a>
+                    
+                </div>
+
+                <div class="sup">
+                    <a href="{% static 'thesite/images/BRANDINK_LIBRETA.jpg' %}" data-lightbox="mygallery">                    
+                        <img class="item" src="{% static 'thesite/images/BRANDINK_LIBRETA.jpg' %}" alt="Libreta">
+                        <div class="middle">
+                            <p>LIBRETA</p>
+                        </div>
+                    </a>
+                    
+                </div>
+
+                <div class="sup">
+                    <a href="{% static 'thesite/images/BRANDINK_PLAYERA_MANO.jpg' %}" data-lightbox="mygallery">                    
+                        <img class="item" src="{% static 'thesite/images/BRANDINK_PLAYERA_MANO.jpg' %}" alt="Bolsa Playera">
+                        <div class="middle">
+                            <p>BOLSA PLAYERA</p>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="sup">
+                    <a href="{% static 'thesite/images/BRANDINK_COFFEE_CUP.jpg' %}" data-lightbox="mygallery">                    
+                        <img class="item" src="{% static 'thesite/images/BRANDINK_COFFEE_CUP.jpg' %}" alt="Cafe cover">
+                        <div class="middle">
+                            <p>CAFE COVER</p>
+                        </div>
+                    </a>
+                </div>
             </div>
             <div class="column">
-                <img class="item" src="{% static 'thesite/images/BRANDINK_CAMISETA_CAJA.jpg' %}" alt="Brand Sitcks">
-                <img class="item" src="{% static 'thesite/images/BRANDINK_SOBRE_KRAFT.jpg' %}" alt="Brand Sitcks">
-                <img class="item" src="{% static 'thesite/images/BOLSA_KRAFT.jpg' %}" alt="Brand Sitcks">
-                <img class="item" src="{% static 'thesite/images/BRANDINK_FOOD_PACKAGE.jpg' %}" alt="Brand Sitcks">
+                <div class="sup">
+                    <a href="{% static 'thesite/images/BRANDINK_CAMISETA_CAJA.jpg' %}" data-lightbox="mygallery">                    
+                        <img class="item" src="{% static 'thesite/images/BRANDINK_CAMISETA_CAJA.jpg' %}" alt="Brand Sitckers">
+                        <div class="middle">
+                            <p>BRAND STICKERS</p>
+                        </div>
+                    </a>
+                </div>
+                    
+                <div class="sup">
+                    <a href="{% static 'thesite/images/BRANDINK_SOBRE_KRAFT.jpg' %}" data-lightbox="mygallery">                    
+                        <img class="item" src="{% static 'thesite/images/BRANDINK_SOBRE_KRAFT.jpg' %}" alt="Sobres">
+                        <div class="middle">
+                            <p>SOBRES</p>
+                        </div>
+                    </a>
+                </div>
+                    
+                <div class="sup">
+                    <a href="{% static 'thesite/images/BOLSA_KRAFT.jpg' %}" data-lightbox="mygallery">                    
+                        <img class="item" src="{% static 'thesite/images/BOLSA_KRAFT.jpg' %}" alt="Bolsa">
+                        <div class="middle">
+                            <p>BOLSAS</p>
+                        </div>
+                    </a>
+                    
+                </div>
+                
+                <div class="sup">
+                    <a href="{% static 'thesite/images/BRANDINK_FOOD_PACKAGE.jpg' %}" data-lightbox="mygallery">                    
+                        <img class="item" src="{% static 'thesite/images/BRANDINK_FOOD_PACKAGE.jpg' %}" alt="Food Package">
+                        <div class="middle">
+                            <p>FOOD PACKAGING</p>
+                        </div>
+                    </a>
+                </div>
             </div>
         </div>
     </section>
@@ -124,7 +247,7 @@
                 est unde et. Culpa, id. Laboriosam enim eum, quos aperiam optio sed ea!</p>
         </div>
 
-        <form>
+        <form action="{% url 'thesite:sendmail' %}">
             <div class="wrapper">
                 <input type="text" name="nombre" placeholder="Nombre*" value="">
                 <input type="email" name="email" placeholder="Email*" value="">

@@ -89,7 +89,6 @@ body, html {
     padding: 0 4px;
     max-width: 950px;
     margin: auto;
-    /* height: auto; */
 }
 
 /* Create three equal columns that sit next to each other */
@@ -101,6 +100,11 @@ body, html {
     padding: 0 4px;
 }
 
+.sup {
+    width: 100%;
+    position: relative;
+}
+
 .column img {
     opacity: 1;
     position: relative;
@@ -110,10 +114,29 @@ body, html {
     cursor: pointer;
 }
 
-.column img:hover {
+.middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    transition: 0.5s ease;
+    /*width: 100%;*/
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.middle p {
+    font-family: "Barlow_ExtraLight";
+    color: #000000;
+}
+
+.column .sup:hover img {
     opacity: 0.3;
 }
 
+.column .sup:hover .middle {
+    opacity: 1;
+}
 
 .section_4 {
     width: 100%;
@@ -125,7 +148,7 @@ body, html {
     color: white;
 }
 
-.section_4 .line {
+.section_4 .line  {
     background-color: white;
 }
 
