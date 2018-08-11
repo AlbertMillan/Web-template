@@ -8,7 +8,7 @@ body, html {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url(images/FONDO2.jpg);
+    background-image: url(images/PORTADA_BRANDINK_2.jpg);
     height: 100%;
 }
 
@@ -18,14 +18,10 @@ body, html {
     text-align: center;
 }
 
-.section_2 {
-    /* height: px; */
-}
-
 .caption {
     position: relative;
     width: 100%;
-    padding-top: 27px;
+    padding-top: 60px;
     text-align: center;
 }
 
@@ -38,7 +34,7 @@ body, html {
     letter-spacing: 0.16em;
 }
 
-.line {
+.line, .line_2 {
     min-height: 2px;
     height: 4px;
     width: 86px;
@@ -47,20 +43,29 @@ body, html {
     margin-left: calc(50% - 43px);
 }
 
-.sec2_box_text {
-    width: 60%;
-    margin-left: 20%;
-    /* margin-right: 15%; */
-    /* text-align: center; */
+.line {
+    margin-bottom: 50px;
 }
 
-.sec2_options{
+.sec2_box_text {
+    width: 60%;
+    margin: 20px 0px 45px 20%;
+    line-height: 1.6;
+}
+
+.barlow_p {
+    font-family: "Barlow_Medium";
+}
+
+.sec2_options {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    /* align-items: flex-end; */
+    padding-bottom: 30px;
     height: auto;
+    width: 70%;
+    margin: auto;
 }
 
 .img_with_text {
@@ -112,6 +117,7 @@ body, html {
     margin-top: 8px;
     vertical-align: middle;
     cursor: pointer;
+    /* background-color: white; */
 }
 
 .middle {
@@ -165,7 +171,7 @@ body, html {
 .sec4_nike {
     width: 250px;
     height: 75px;
-    padding: 15px 30px 0px 30px;
+    padding: 15px 0px 0px 0px;
 }
 
 .sec4_mrjeff {
@@ -198,10 +204,6 @@ body, html {
     padding: 15px 30px 0px 30px;
 }
 
-.section_5 {
-
-}
-
 .wrapper {
     min-width: 180px;
     max-width: 600px;
@@ -217,6 +219,7 @@ body, html {
     font: normal normal normal 14px/1.4em futura-lt-w01-light, sans-serif;
     color: #000000;
     background-color: rgba(217, 217, 217, 0.38);
+    border: solid 1px gray;
     box-sizing: border-box;
     border-radius: 0;
     z-index: 1;
@@ -226,13 +229,19 @@ body, html {
     margin-bottom: 12px;
 }
 
+.wrapper textarea {
+    height: 120px;
+    max-width: 100%;
+    min-width: 100%;
+}
+
 .submit_button {
     cursor: pointer;
     background-color: rgba(0, 0, 0, 0.82);
     color: #ffffff;
     min-width: 150px;
     max-width: calc(100% - 40px);
-    margin: 10px auto 30px auto;
+    margin: 20px auto 70px auto;
     display: block;
     font: normal normal normal 16px/1.4em futura-lt-w01-book, sans-serif;
     padding: 12px;
@@ -273,15 +282,7 @@ body, html {
     padding-bottom: 25px;
 }
 
-/* .item {
-    position: relative;
-    left:3px;
-    width: 100%;
-    margin-bottom: 13px;
-    box-shadow: rgba(0, 0, 0, 0.33) 0px 1px 3px 0px;
-    cursor: pointer;
-    top: 3px;
-} */
+
 
 /* Responsive layout - makes a two column-layout instead of three columns */
 @media screen and (max-width: 800px) {
@@ -317,13 +318,4 @@ body, html {
     font-family: "Barlow_ExtraLight";
     src: url(fonts/Barlow-ExtraLight.ttf) format("truetype");
 }
-
-/* img {
-    width: 100%;
-    height: 600px;
-    margin: 0;
-} 
-
-.font_4 {font: normal normal normal 39px/1.4em helvetica-w01-bold,helvetica-w02-bold,helvetica-lt-w10-bold,sans-serif ;color:#FBD8D4;} 
-*/
 
