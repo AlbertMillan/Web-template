@@ -7,6 +7,16 @@
     <link rel="stylesheet" type="text/css" href="style/index.css" />
     <link rel="stylesheet" type="text/css" href="style/lightbox.min.css" />
     <script type="text/javascript" src="js/lightbox-plus-jquery.min.js"></script>
+    <script>
+        // When the user clicks on div, open the popup
+        function myFunction() {
+            var popup = document.getElementById("myPopup");
+            popup.classList.toggle("show");                            // Generate Popup
+            /*setTimeout(() => {
+                popup.classList.toggle("show");                        // Remove Popup
+            }, 2000);*/
+        }
+    </script>
 </head>
 
 <body>
@@ -253,6 +263,9 @@
                 <textarea name="message" placeholder="Mensaje"></textarea>
             </div>
             <button class="submit_button" type="submit" name="submit">Enviar</button>
+            <div class="popup">
+                <span class="popuptext" id="myPopup">Email enviado correctamente!</span>
+            </div>
         </form>
 
     </section>

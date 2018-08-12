@@ -241,12 +241,61 @@ body, html {
     color: #ffffff;
     min-width: 150px;
     max-width: calc(100% - 40px);
-    margin: 20px auto 70px auto;
+    margin: 20px auto 30px auto;
     display: block;
     font: normal normal normal 16px/1.4em futura-lt-w01-book, sans-serif;
     padding: 12px;
     z-index: 100;
 }
+
+/* Popup container - can be anything you want */
+.popup {
+    position: relative;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width: 100%;
+    margin-left: calc(50% - 110px);
+    margin-bottom: 40px;
+}
+
+/* The actual popup */
+.popup .popuptext {
+    visibility: hidden;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 16px;
+    position: relative;
+    z-index: 1;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
+
+
+
+
+
+
 
 .footer {
     background-color: #323232;
